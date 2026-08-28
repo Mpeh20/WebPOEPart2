@@ -11,8 +11,8 @@ The document outlines the project initiation and planning phase for the **Cape T
 - **Subject Code:** [WEDE5020]  
 - **Student Name:** Vuyolwethu Ngwalangwala  
 - **Student Number:** [Ngwalangwala]  
-- **Group:** 1  
-- **Submission Date:** 27 August 2025  
+- **Group:** 2  
+- **Submission Date:** 14 August 2026  
 - **Assignment:** Part 1 — Project Initiation and Planning  
 
 
