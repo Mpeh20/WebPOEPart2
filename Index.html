@@ -1,37 +1,171 @@
+<!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Home | CTARS</title>
-  <link rel="stylesheet" href="css/style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description"
+        content="CTARS rescues, rehabilitates and rehomes abandoned animals in Cape Town. Adopt, foster, volunteer or donate today." />
+  <title>CTARS – Cape Town Animal Rescue Society | Home</title>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&family=Open+Sans:wght@300;400;600;700&display=swap"
+        rel="stylesheet" />
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+
+  <!-- External stylesheet (Part 2) -->
+  <link rel="stylesheet" href="css/style.css" />
 </head>
 <body>
-  <header>
-    <nav>
-      <ul>
-        <li><a href="index.html" class="active">Home</a></li>
-        <li><a href="about.html">About Us</a></li>
-        <li><a href="services.html">Adopt</a></li>
-        <li><a href="enquiry.html">Volunteer</a></li>
-        <li><a href="contact.html">Contact</a></li>
-      </ul>
-    </nav>
+
+  <!-- ============ HEADER / NAVIGATION ============ -->
+  <header class="site-header">
+    <div class="container nav-row">
+      <a href="index.html" class="logo" aria-label="CTARS home">
+        <i class="fas fa-paw"></i> CTARS
+      </a>
+      <nav aria-label="Main navigation">
+        <ul class="nav-list">
+          <li><a href="index.html" class="active" aria-current="page"><i class="fas fa-home"></i> Home</a></li>
+          <li><a href="about.html"><i class="fas fa-info-circle"></i> About</a></li>
+          <li><a href="services.html"><i class="fas fa-dog"></i> Services</a></li>
+          <li><a href="enquiry.html"><i class="fas fa-envelope"></i> Enquiry</a></li>
+          <li><a href="contact.html"><i class="fas fa-phone-alt"></i> Contact</a></li>
+        </ul>
+      </nav>
+    </div>
   </header>
 
-  <main>
-    <section class="hero">
-      <h1>Welcome to CTARS</h1>
-      <p>Helping animals find loving homes since 2005.</p>
-      <a href="services.html" class="cta">View Pets</a>
+  <!-- ============ MAIN CONTENT ============ -->
+  <main class="container">
+
+    <!-- HERO -->
+    <section class="hero" aria-labelledby="hero-heading">
+      <span class="hero-emoji-strip" aria-hidden="true">🐕 🐈 🐾</span>
+      <h1 id="hero-heading">Give a stray a second chance</h1>
+      <p>CTARS rescues, rehabilitates, and rehomes abandoned animals in Cape Town.
+         Together, we can build a future where every pet has a loving home.</p>
+      <div class="hero-btns">
+        <a href="services.html" class="btn-primary"><i class="fas fa-heart"></i> Adopt Now</a>
+        <a href="enquiry.html" class="btn-secondary"><i class="fas fa-donate"></i> Donate</a>
+      </div>
     </section>
 
-    <section class="mission">
-      <h2>Our Mission</h2>
-      <p>To rescue, rehabilitate, and rehome abandoned animals in Cape Town.</p>
+    <!-- MISSION & VISION -->
+    <section class="mission-strip" aria-label="Our mission and vision">
+      <article class="mission-card">
+        <i class="fas fa-bullseye" aria-hidden="true"></i>
+        <h3>Our Mission</h3>
+        <p>To rescue, heal, and find loving forever homes for every animal in our care,
+           while promoting responsible pet ownership through education and community engagement.</p>
+      </article>
+      <article class="mission-card">
+        <i class="fas fa-eye" aria-hidden="true"></i>
+        <h3>Our Vision</h3>
+        <p>A world where every companion animal is cherished, safe, and part of a caring
+           family – no animal left behind.</p>
+      </article>
     </section>
+
+    <!-- FEATURED PETS -->
+    <section class="featured-section" aria-labelledby="featured-heading">
+      <h2 class="section-head" id="featured-heading">
+        <i class="fas fa-paw" aria-hidden="true"></i> Featured Pets
+      </h2>
+      <p class="section-sub">Meet some of our lovable residents waiting for their forever home.</p>
+
+      <div class="pet-grid">
+        <article class="pet-card">
+          <div class="pet-emoji" aria-hidden="true">🐕</div>
+          <h4>Max</h4>
+          <p class="pet-detail"><i class="fas fa-dog"></i> 2 years · Male · Lab mix</p>
+          <p>Friendly, energetic, loves children and other dogs.</p>
+          <a href="services.html" class="btn-outline">Meet Max</a>
+        </article>
+
+        <article class="pet-card">
+          <div class="pet-emoji" aria-hidden="true">🐈</div>
+          <h4>Luna</h4>
+          <p class="pet-detail"><i class="fas fa-cat"></i> 1 year · Female · Tabby</p>
+          <p>Gentle, affectionate, and loves to cuddle on your lap.</p>
+          <a href="services.html" class="btn-outline">Meet Luna</a>
+        </article>
+
+        <article class="pet-card">
+          <div class="pet-emoji" aria-hidden="true">🐕</div>
+          <h4>Buddy</h4>
+          <p class="pet-detail"><i class="fas fa-dog"></i> 4 years · Male · Terrier</p>
+          <p>Loyal, playful, and loves long walks on the beach.</p>
+          <a href="services.html" class="btn-outline">Meet Buddy</a>
+        </article>
+      </div>
+
+      <div class="center-btn">
+        <a href="services.html" class="btn-primary btn-primary--green">
+          <i class="fas fa-arrow-right"></i> View All Pets
+        </a>
+      </div>
+    </section>
+
+    <!-- GET INVOLVED CTA -->
+    <section class="cta-banner" aria-labelledby="cta-heading">
+      <h2 id="cta-heading">You can make a difference</h2>
+      <p>Whether you adopt, foster, volunteer, or donate – every act of kindness
+         brings us closer to a world without homeless pets.</p>
+      <div>
+        <a href="enquiry.html" class="btn-primary"><i class="fas fa-hands-helping"></i> Volunteer</a>
+        <a href="enquiry.html" class="btn-secondary"><i class="fas fa-donate"></i> Donate</a>
+      </div>
+    </section>
+
   </main>
 
-  <footer>
-    <p>&copy; 2025 CTARS | Animal Rescue Society</p>
+  <!-- ============ FOOTER ============ -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-col">
+          <h4>Quick Links</h4>
+          <a href="index.html"><i class="fas fa-home"></i> Home</a>
+          <a href="about.html"><i class="fas fa-info-circle"></i> About</a>
+          <a href="services.html"><i class="fas fa-dog"></i> Services</a>
+          <a href="enquiry.html"><i class="fas fa-envelope"></i> Enquiry</a>
+          <a href="contact.html"><i class="fas fa-phone-alt"></i> Contact</a>
+        </div>
+
+        <div class="footer-col">
+          <h4>Visit Us</h4>
+          <a href="contact.html"><i class="fas fa-map-pin"></i> 123 Rescue Lane, Cape Town</a>
+          <a href="contact.html"><i class="fas fa-store"></i> Mobile adoption events</a>
+          <a href="tel:+27215550199"><i class="fas fa-phone"></i> (021) 555-0199</a>
+          <a href="mailto:info@ctars.org.za"><i class="fas fa-envelope"></i> info@ctars.org.za</a>
+        </div>
+
+        <div class="footer-col">
+          <h4>Connect</h4>
+          <div class="social-icons">
+            <a href="#" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+            <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+            <a href="#" aria-label="TikTok"><i class="fab fa-tiktok"></i></a>
+            <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+          </div>
+          <p class="footer-note">
+            <i class="fas fa-heart"></i> Every animal matters
+          </p>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        &copy; 2026 CTARS – Cape Town Animal Rescue Society. Made with
+        <i class="fas fa-paw"></i> and dedication.
+      </div>
+    </div>
   </footer>
+
+  <script src="js/script.js"></script>
 </body>
 </html>
