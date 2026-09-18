@@ -1,41 +1,220 @@
+<!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Adopt a Pet | CTARS</title>
-  <link rel="stylesheet" href="css/style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description"
+        content="Browse adoptable dogs and cats at CTARS, learn about our rescue, rehabilitation and adoption services." />
+  <title>Services &amp; Adoptable Pets – CTARS</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&family=Open+Sans:wght@300;400;600;700&display=swap"
+        rel="stylesheet" />
+  <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+  <link rel="stylesheet" href="css/style.css" />
 </head>
 <body>
-  <header>
-    <nav>
-      <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="about.html">About Us</a></li>
-        <li><a href="services.html" class="active">Adopt</a></li>
-        <li><a href="enquiry.html">Volunteer</a></li>
-        <li><a href="contact.html">Contact</a></li>
-      </ul>
-    </nav>
+
+  <!-- ============ HEADER ============ -->
+  <header class="site-header">
+    <div class="container nav-row">
+      <a href="index.html" class="logo" aria-label="CTARS home">
+        <i class="fas fa-paw"></i> CTARS
+      </a>
+      <nav aria-label="Main navigation">
+        <ul class="nav-list">
+          <li><a href="index.html"><i class="fas fa-home"></i> Home</a></li>
+          <li><a href="about.html"><i class="fas fa-info-circle"></i> About</a></li>
+          <li><a href="services.html" class="active" aria-current="page"><i class="fas fa-dog"></i> Services</a></li>
+          <li><a href="enquiry.html"><i class="fas fa-envelope"></i> Enquiry</a></li>
+          <li><a href="contact.html"><i class="fas fa-phone-alt"></i> Contact</a></li>
+        </ul>
+      </nav>
+    </div>
   </header>
 
-  <main>
-  <h1>Available Pets for Adoption</h1>
-  <section class="pet-gallery">
-    <article class="pet">
-      <img src="Dog-picture.jpg" alt="Buddy the dog, a playful Labrador puppy">
-      <h2>Buddy</h2>
-      <p>2-year-old Labrador. Friendly and energetic.</p>
-    </article>
+  <!-- ============ MAIN ============ -->
+  <main class="container">
 
-    <article class="pet">
-      <img src="Cat-picture.jpg" alt="Mittens the cat, calm and affectionate">
-      <h2>Mittens</h2>
-      <p>5-year-old cat. Calm and affectionate.</p>
-    </article>
-  </section>
-</main>
+    <header class="page-header">
+      <h1>Our Services</h1>
+      <p class="page-subtitle">From rescue to rehoming — what we do, and how you can adopt.</p>
+    </header>
 
-  <footer>
-    <p>&copy; 2025 CTARS</p>
+    <!-- Service Cards -->
+    <section class="content-block" aria-labelledby="services-list-heading">
+      <h2 id="services-list-heading"><i class="fas fa-hands-helping"></i> What We Offer</h2>
+      <div class="services-grid">
+        <article class="service-card">
+          <i class="fas fa-truck-medical" aria-hidden="true"></i>
+          <h3>Rescue &amp; Rehabilitation</h3>
+          <p>We rescue abandoned, abused and injured animals, and provide full veterinary
+             care, sterilisation and rehabilitation before rehoming.</p>
+        </article>
+
+        <article class="service-card">
+          <i class="fas fa-home" aria-hidden="true"></i>
+          <h3>Adoption &amp; Rehoming</h3>
+          <p>We match every animal with a carefully screened forever home. Meet-and-greets
+             and home checks ensure the best fit for both pet and family.</p>
+        </article>
+
+        <article class="service-card">
+          <i class="fas fa-people-roof" aria-hidden="true"></i>
+          <h3>Foster Care Programme</h3>
+          <p>Foster families give animals a safe, loving home environment while they
+             wait for adoption — we provide food, vet care and support.</p>
+        </article>
+
+        <article class="service-card">
+          <i class="fas fa-graduation-cap" aria-hidden="true"></i>
+          <h3>Community Education</h3>
+          <p>We run school visits, community workshops and awareness campaigns about
+             responsible pet ownership, sterilisation and animal welfare.</p>
+        </article>
+
+        <article class="service-card">
+          <i class="fas fa-syringe" aria-hidden="true"></i>
+          <h3>Sterilisation Outreach</h3>
+          <p>Free or subsidised sterilisation drives in under-served communities to
+             reduce the number of unwanted litters.</p>
+        </article>
+
+        <article class="service-card">
+          <i class="fas fa-bone" aria-hidden="true"></i>
+          <h3>Food &amp; Supply Support</h3>
+          <p>We distribute pet food and supplies to vulnerable pet owners, keeping
+             animals with their families wherever possible.</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- Adoptable Pets -->
+    <section class="content-block" aria-labelledby="pets-heading">
+      <h2 id="pets-heading"><i class="fas fa-paw"></i> Adoptable Pets</h2>
+      <p class="section-sub">These animals are currently looking for their forever homes.</p>
+
+      <!-- Filter buttons -->
+      <div class="filter-bar" role="group" aria-label="Filter pets by type">
+        <button type="button" class="filter-btn active" data-filter="all">All</button>
+        <button type="button" class="filter-btn" data-filter="dog">Dogs</button>
+        <button type="button" class="filter-btn" data-filter="cat">Cats</button>
+      </div>
+
+      <div class="pet-grid" id="pet-grid">
+        <article class="pet-card" data-type="dog">
+          <div class="pet-emoji" aria-hidden="true">🐕</div>
+          <h4>Max</h4>
+          <p class="pet-detail"><i class="fas fa-dog"></i> 2 years · Male · Lab mix</p>
+          <p>Friendly, energetic, great with children and other dogs.</p>
+          <a href="enquiry.html" class="btn-outline">Enquire about Max</a>
+        </article>
+
+        <article class="pet-card" data-type="cat">
+          <div class="pet-emoji" aria-hidden="true">🐈</div>
+          <h4>Luna</h4>
+          <p class="pet-detail"><i class="fas fa-cat"></i> 1 year · Female · Tabby</p>
+          <p>Gentle, affectionate and loves lap cuddles.</p>
+          <a href="enquiry.html" class="btn-outline">Enquire about Luna</a>
+        </article>
+
+        <article class="pet-card" data-type="dog">
+          <div class="pet-emoji" aria-hidden="true">🐕</div>
+          <h4>Buddy</h4>
+          <p class="pet-detail"><i class="fas fa-dog"></i> 4 years · Male · Terrier</p>
+          <p>Loyal, playful, loves beach walks and belly rubs.</p>
+          <a href="enquiry.html" class="btn-outline">Enquire about Buddy</a>
+        </article>
+
+        <article class="pet-card" data-type="cat">
+          <div class="pet-emoji" aria-hidden="true">🐱</div>
+          <h4>Cleo</h4>
+          <p class="pet-detail"><i class="fas fa-cat"></i> 3 years · Female · Calico</p>
+          <p>Independent, curious and a champion sunbather.</p>
+          <a href="enquiry.html" class="btn-outline">Enquire about Cleo</a>
+        </article>
+
+        <article class="pet-card" data-type="dog">
+          <div class="pet-emoji" aria-hidden="true">🐶</div>
+          <h4>Rosie</h4>
+          <p class="pet-detail"><i class="fas fa-dog"></i> 6 months · Female · Mixed</p>
+          <p>Playful puppy with endless energy and love to give.</p>
+          <a href="enquiry.html" class="btn-outline">Enquire about Rosie</a>
+        </article>
+
+        <article class="pet-card" data-type="cat">
+          <div class="pet-emoji" aria-hidden="true">🐈‍⬛</div>
+          <h4>Shadow</h4>
+          <p class="pet-detail"><i class="fas fa-cat"></i> 2 years · Male · Black DSH</p>
+          <p>Sleek, quiet and very affectionate once he trusts you.</p>
+          <a href="enquiry.html" class="btn-outline">Enquire about Shadow</a>
+        </article>
+      </div>
+    </section>
+
+    <!-- Adoption Process -->
+    <section class="content-block" aria-labelledby="process-heading">
+      <h2 id="process-heading"><i class="fas fa-list-check"></i> How Adoption Works</h2>
+      <ol class="process-list">
+        <li><strong>Browse &amp; enquire:</strong> Find a pet you connect with and submit an enquiry.</li>
+        <li><strong>Meet &amp; greet:</strong> We arrange a meeting at our centre or via a foster home.</li>
+        <li><strong>Home check:</strong> A volunteer visits your home to ensure a safe environment.</li>
+        <li><strong>Adoption fee:</strong> A contribution covers sterilisation, vaccination and microchipping.</li>
+        <li><strong>Welcome home:</strong> You take your new family member home. We follow up at 1 month and 6 months.</li>
+      </ol>
+    </section>
+
+    <!-- CTA -->
+    <section class="cta-banner">
+      <h2>Ready to adopt?</h2>
+      <p>Submit an enquiry and our adoption team will be in touch within 48 hours.</p>
+      <a href="enquiry.html" class="btn-primary"><i class="fas fa-heart"></i> Start an Enquiry</a>
+    </section>
+
+  </main>
+
+  <!-- ============ FOOTER ============ -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-col">
+          <h4>Quick Links</h4>
+          <a href="index.html"><i class="fas fa-home"></i> Home</a>
+          <a href="about.html"><i class="fas fa-info-circle"></i> About</a>
+          <a href="services.html"><i class="fas fa-dog"></i> Services</a>
+          <a href="enquiry.html"><i class="fas fa-envelope"></i> Enquiry</a>
+          <a href="contact.html"><i class="fas fa-phone-alt"></i> Contact</a>
+        </div>
+
+        <div class="footer-col">
+          <h4>Visit Us</h4>
+          <a href="contact.html"><i class="fas fa-map-pin"></i> 123 Rescue Lane, Cape Town</a>
+          <a href="contact.html"><i class="fas fa-store"></i> Mobile adoption events</a>
+          <a href="tel:+27215550199"><i class="fas fa-phone"></i> (021) 555-0199</a>
+          <a href="mailto:info@ctars.org.za"><i class="fas fa-envelope"></i> info@ctars.org.za</a>
+        </div>
+
+        <div class="footer-col">
+          <h4>Connect</h4>
+          <div class="social-icons">
+            <a href="#" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+            <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+            <a href="#" aria-label="TikTok"><i class="fab fa-tiktok"></i></a>
+            <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+          </div>
+          <p class="footer-note"><i class="fas fa-heart"></i> Every animal matters</p>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        &copy; 2026 CTARS – Cape Town Animal Rescue Society. Made with
+        <i class="fas fa-paw"></i> and dedication.
+      </div>
+    </div>
   </footer>
+
+  <script src="js/script.js"></script>
 </body>
 </html>
