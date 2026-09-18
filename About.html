@@ -1,45 +1,166 @@
+<!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>About Us | CTARS</title>
-  <link rel="stylesheet" href="css/style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description"
+        content="Learn about CTARS – a volunteer-run animal rescue founded in 2005 in Cape Town. Our history, mission, vision and team." />
+  <title>About CTARS – Cape Town Animal Rescue Society</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&family=Open+Sans:wght@300;400;600;700&display=swap"
+        rel="stylesheet" />
+  <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+  <link rel="stylesheet" href="css/style.css" />
 </head>
 <body>
-  <header>
-    <nav>
-      <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="about.html" class="active">About Us</a></li>
-        <li><a href="services.html">Adopt</a></li>
-        <li><a href="enquiry.html">Volunteer</a></li>
-        <li><a href="contact.html">Contact</a></li>
-      </ul>
-    </nav>
+
+  <!-- ============ HEADER ============ -->
+  <header class="site-header">
+    <div class="container nav-row">
+      <a href="index.html" class="logo" aria-label="CTARS home">
+        <i class="fas fa-paw"></i> CTARS
+      </a>
+      <nav aria-label="Main navigation">
+        <ul class="nav-list">
+          <li><a href="index.html"><i class="fas fa-home"></i> Home</a></li>
+          <li><a href="about.html" class="active" aria-current="page"><i class="fas fa-info-circle"></i> About</a></li>
+          <li><a href="services.html"><i class="fas fa-dog"></i> Services</a></li>
+          <li><a href="enquiry.html"><i class="fas fa-envelope"></i> Enquiry</a></li>
+          <li><a href="contact.html"><i class="fas fa-phone-alt"></i> Contact</a></li>
+        </ul>
+      </nav>
+    </div>
   </header>
 
-  <main>
-    <section>
+  <!-- ============ MAIN ============ -->
+  <main class="container">
+
+    <header class="page-header">
       <h1>About CTARS</h1>
-      <p>Founded in 2005, Cape Town Animal Rescue Society is dedicated to animal welfare.</p>
+      <p class="page-subtitle">Rescuing, rehabilitating and rehoming animals since 2005.</p>
+    </header>
+
+    <!-- History -->
+    <section class="content-block" aria-labelledby="history-heading">
+      <h2 id="history-heading"><i class="fas fa-book-open"></i> Our History</h2>
+      <p>CTARS was founded in 2005 by a small group of Cape Town animal lovers who
+         began rescuing stray and abused dogs and cats from the streets. What started
+         as a weekend volunteer effort has grown into a recognised non-profit
+         organisation with a network of foster homes, a central adoption centre, and
+         hundreds of animals rehomed every year.</p>
+      <p>For nearly two decades, CTARS has remained entirely volunteer-run and
+         donation-funded. Every rand goes directly towards veterinary care, food,
+         shelter and rehoming efforts.</p>
     </section>
 
-    <section>
-      <h2>Our Vision</h2>
-      <p>A South Africa where every animal is treated with care and compassion.</p>
+    <!-- Mission & Vision -->
+    <section class="mission-strip" aria-label="Mission and vision">
+      <article class="mission-card">
+        <i class="fas fa-bullseye" aria-hidden="true"></i>
+        <h3>Our Mission</h3>
+        <p>To rescue, rehabilitate and rehome abandoned or abused animals in Cape Town,
+           while promoting responsible pet ownership and compassion towards all living creatures.</p>
+      </article>
+      <article class="mission-card">
+        <i class="fas fa-eye" aria-hidden="true"></i>
+        <h3>Our Vision</h3>
+        <p>A compassionate Cape Town where every animal is treated with dignity,
+           has access to proper care, and finds a loving forever home.</p>
+      </article>
     </section>
 
-    <section>
-      <h2>Meet the Team</h2>
-      <ul>
-        <li>Founder: Thea Johnson</li>
-        <li>Lead Vet: Dr. Mark Daniels</li>
-        <li>Volunteer Manager: Susan Smith</li>
+    <!-- Team -->
+    <section class="content-block" aria-labelledby="team-heading">
+      <h2 id="team-heading"><i class="fas fa-users"></i> Meet the Team</h2>
+      <p class="section-sub">Our volunteers give their time, skills and hearts to the animals in our care.</p>
+
+      <div class="team-grid">
+        <article class="team-card">
+          <div class="team-avatar" aria-hidden="true">👩‍⚕️</div>
+          <h3>Dr. Naledi Mokoena</h3>
+          <p class="team-role">Founder &amp; Veterinary Lead</p>
+          <p>Leads rescue operations and oversees all medical care for incoming animals.</p>
+        </article>
+
+        <article class="team-card">
+          <div class="team-avatar" aria-hidden="true">🧑‍💼</div>
+          <h3>Sipho Dlamini</h3>
+          <p class="team-role">Operations Coordinator</p>
+          <p>Coordinates foster placements, adoption events and volunteer schedules.</p>
+        </article>
+
+        <article class="team-card">
+          <div class="team-avatar" aria-hidden="true">👩‍🎓</div>
+          <h3>Rebecca van Wyk</h3>
+          <p class="team-role">Community &amp; Fundraising</p>
+          <p>Runs awareness campaigns, donor relations and corporate partnerships.</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- Values -->
+    <section class="content-block" aria-labelledby="values-heading">
+      <h2 id="values-heading"><i class="fas fa-hand-holding-heart"></i> Our Values</h2>
+      <ul class="value-list">
+        <li><i class="fas fa-check-circle"></i> <strong>Compassion:</strong> Every animal is treated with kindness and dignity.</li>
+        <li><i class="fas fa-check-circle"></i> <strong>Transparency:</strong> We are accountable to our donors and community.</li>
+        <li><i class="fas fa-check-circle"></i> <strong>Responsibility:</strong> We promote responsible pet ownership.</li>
+        <li><i class="fas fa-check-circle"></i> <strong>Community:</strong> We work together with volunteers, fosters and partners.</li>
       </ul>
     </section>
+
+    <!-- CTA -->
+    <section class="cta-banner">
+      <h2>Be part of our story</h2>
+      <p>Adopt, foster, volunteer or donate — every action changes a life.</p>
+      <a href="enquiry.html" class="btn-primary"><i class="fas fa-hands-helping"></i> Get Involved</a>
+    </section>
+
   </main>
 
-  <footer>
-    <p>&copy; 2025 CTARS</p>
+  <!-- ============ FOOTER ============ -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-col">
+          <h4>Quick Links</h4>
+          <a href="index.html"><i class="fas fa-home"></i> Home</a>
+          <a href="about.html"><i class="fas fa-info-circle"></i> About</a>
+          <a href="services.html"><i class="fas fa-dog"></i> Services</a>
+          <a href="enquiry.html"><i class="fas fa-envelope"></i> Enquiry</a>
+          <a href="contact.html"><i class="fas fa-phone-alt"></i> Contact</a>
+        </div>
+
+        <div class="footer-col">
+          <h4>Visit Us</h4>
+          <a href="contact.html"><i class="fas fa-map-pin"></i> 123 Rescue Lane, Cape Town</a>
+          <a href="contact.html"><i class="fas fa-store"></i> Mobile adoption events</a>
+          <a href="tel:+27215550199"><i class="fas fa-phone"></i> (021) 555-0199</a>
+          <a href="mailto:info@ctars.org.za"><i class="fas fa-envelope"></i> info@ctars.org.za</a>
+        </div>
+
+        <div class="footer-col">
+          <h4>Connect</h4>
+          <div class="social-icons">
+            <a href="#" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+            <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+            <a href="#" aria-label="TikTok"><i class="fab fa-tiktok"></i></a>
+            <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+          </div>
+          <p class="footer-note"><i class="fas fa-heart"></i> Every animal matters</p>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        &copy; 2026 CTARS – Cape Town Animal Rescue Society. Made with
+        <i class="fas fa-paw"></i> and dedication.
+      </div>
+    </div>
   </footer>
+
+  <script src="js/script.js"></script>
 </body>
 </html>
