@@ -1,46 +1,91 @@
+<!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Volunteer or Sponsor | CTARS</title>
-  <link rel="stylesheet" href="css/style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description"
+        content="Enquire about volunteering, fostering or sponsoring an animal at CTARS. Complete our online enquiry form." />
+  <title>Enquiry – Volunteer, Foster or Sponsor | CTARS</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&family=Open+Sans:wght@300;400;600;700&display=swap"
+        rel="stylesheet" />
+  <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+  <link rel="stylesheet" href="css/style.css" />
 </head>
 <body>
-  <header>
-    <nav>
-      <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="about.html">About Us</a></li>
-        <li><a href="services.html">Adopt</a></li>
-        <li><a href="enquiry.html" class="active">Volunteer</a></li>
-        <li><a href="contact.html">Contact</a></li>
-      </ul>
-    </nav>
+
+  <!-- ============ HEADER ============ -->
+  <header class="site-header">
+    <div class="container nav-row">
+      <a href="index.html" class="logo" aria-label="CTARS home">
+        <i class="fas fa-paw"></i> CTARS
+      </a>
+      <nav aria-label="Main navigation">
+        <ul class="nav-list">
+          <li><a href="index.html"><i class="fas fa-home"></i> Home</a></li>
+          <li><a href="about.html"><i class="fas fa-info-circle"></i> About</a></li>
+          <li><a href="services.html"><i class="fas fa-dog"></i> Services</a></li>
+          <li><a href="enquiry.html" class="active" aria-current="page"><i class="fas fa-envelope"></i> Enquiry</a></li>
+          <li><a href="contact.html"><i class="fas fa-phone-alt"></i> Contact</a></li>
+        </ul>
+      </nav>
+    </div>
   </header>
 
-  <main>
-    <h1>Get Involved</h1>
-    <form>
-      <label for="name">Full Name:</label>
-      <input type="text" id="name" name="name" required>
+  <!-- ============ MAIN ============ -->
+  <main class="container">
 
-      <label for="email">Email Address:</label>
-      <input type="email" id="email" name="email" required>
+    <header class="page-header">
+      <h1>Make an Enquiry</h1>
+      <p class="page-subtitle">Volunteer, foster or sponsor — tell us how you'd like to help.</p>
+    </header>
 
-      <label for="role">I want to:</label>
-      <select id="role" name="role">
-        <option value="volunteer">Volunteer</option>
-        <option value="sponsor">Become a Sponsor</option>
-      </select>
+    <div class="enquiry-layout">
 
-      <label for="message">Why are you interested?</label>
-      <textarea id="message" name="message" rows="5"></textarea>
+      <!-- LEFT: info cards -->
+      <aside class="enquiry-info" aria-label="Ways to help">
+        <article class="info-card">
+          <i class="fas fa-hands-helping" aria-hidden="true"></i>
+          <h3>Volunteer</h3>
+          <p>Help with dog walking, events, transport or admin. Flexible shifts, no experience needed.</p>
+        </article>
 
-      <button type="submit">Submit</button>
-    </form>
-  </main>
+        <article class="info-card">
+          <i class="fas fa-people-roof" aria-hidden="true"></i>
+          <h3>Foster</h3>
+          <p>Give an animal a temporary home while they wait for adoption. We cover food and vet costs.</p>
+        </article>
 
-  <footer>
-    <p>&copy; 2025 CTARS</p>
-  </footer>
-</body>
-</html>
+        <article class="info-card">
+          <i class="fas fa-hand-holding-heart" aria-hidden="true"></i>
+          <h3>Sponsor</h3>
+          <p>Sponsor a kennel, a specific animal, or our monthly veterinary fund from R150/month.</p>
+        </article>
+
+        <article class="info-card">
+          <i class="fas fa-dog" aria-hidden="true"></i>
+          <h3>Adopt</h3>
+          <p>Want to give a pet a forever home? Select "Adoption" as your enquiry type below.</p>
+        </article>
+      </aside>
+
+      <!-- RIGHT: enquiry form -->
+      <section class="form-card" aria-labelledby="enquiry-form-heading">
+        <h2 id="enquiry-form-heading">
+          <i class="fas fa-paper-plane"></i> Enquiry Form
+        </h2>
+        <p class="form-sub">We'll respond within 48 hours. Fields marked * are required.</p>
+
+        <form action="#" method="post" novalidate>
+          <div class="form-row">
+            <div class="form-group">
+              <label for="first-name">First Name *</label>
+              <input type="text" id="first-name" name="first-name"
+                     placeholder="e.g. Thandi" required />
+            </div>
+
+            <div class="form-group">
+              <label for="last-name">Last Name
